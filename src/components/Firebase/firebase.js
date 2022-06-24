@@ -1,4 +1,3 @@
-import app from 'firebase/app';
 import { initializeApp } from "firebase/app";
 
 const firebaseConfig = {
@@ -10,10 +9,5 @@ const firebaseConfig = {
     appId: "1:376152000350:web:3086577856d006e23271cf"
   };
 
-class Firebase {
-    constructor() {
-        app.initializeApp(firebaseConfig)
-    }
-}
 
-export default Firebase;
+const app = initializeApp(firebaseConfig);
